@@ -2,20 +2,20 @@
 
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, season TEXT, price INTEGER, aisle INTEGER);
 
-INSERT INTO store VALUES (1, "tshirt", "summer", 12, 1),
-INSERT INTO store VALUES (2, "shorts", "summer", 15, 2),
-INSERT INTO store VALUES (3, "jeans", "fall", 20, 2),
-INSERT INTO store VALUES (4, "hoodie", "fall", 25, 3),
-INSERT INTO store VALUES (5, "crewneck", "spring", 15, 4),
-INSERT INTO store VALUES (6, "tanktop", "summer", 10, 1),
-INSERT INTO store VALUES (7, "cardigan", "fall", 15, 5),
-INSERT INTO store VALUES (8, "sweater", "winter", 25, 5),
-INSERT INTO store VALUES (9, "turtleneck", "winter", 30, 5),
-INSERT INTO store VALUES (10, "leggings", "spring", 15, 2),
-INSERT INTO store VALUES (11, "snow pants", "winter", 30, 2),
-INSERT INTO store VALUES (12, "sundress", "summer", 20, 1),
-INSERT INTO store VALUES (13, "sandals", "summer", 15, 6),
-INSERT INTO store VALUES (14, "sneakers", "spring", 20, 6),
+INSERT INTO store VALUES (1, "tshirt", "summer", 12, 1);
+INSERT INTO store VALUES (2, "shorts", "summer", 15, 2);
+INSERT INTO store VALUES (3, "jeans", "fall", 20, 2);
+INSERT INTO store VALUES (4, "hoodie", "fall", 25, 3);
+INSERT INTO store VALUES (5, "crewneck", "spring", 15, 4);
+INSERT INTO store VALUES (6, "tanktop", "summer", 10, 1);
+INSERT INTO store VALUES (7, "cardigan", "fall", 15, 5);
+INSERT INTO store VALUES (8, "sweater", "winter", 25, 5);
+INSERT INTO store VALUES (9, "turtleneck", "winter", 30, 5);
+INSERT INTO store VALUES (10, "leggings", "spring", 15, 2);
+INSERT INTO store VALUES (11, "snow pants", "winter", 30, 2);
+INSERT INTO store VALUES (12, "sundress", "summer", 20, 1);
+INSERT INTO store VALUES (13, "sandals", "summer", 15, 6);
+INSERT INTO store VALUES (14, "sneakers", "spring", 20, 6);
 INSERT INTO store VALUES (15, "boots", "fall", 25, 6);
 
 --display the database ordered by aisle.
