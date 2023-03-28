@@ -1,0 +1,35 @@
+--what is the average median age across countries?--
+SELECT AVG(median_age) FROM countries;
+
+--what countries have an average median age higher than 45?--
+SELECT name, AVG(median_age) FROM countries
+GROUP BY name
+HAVING median_age >45; 
+
+--Find the max population of countries that make up more than 3% of the worlds population--
+SELECT name, MAX(population), percent_of_world_pop FROM countries
+GROUP BY name
+HAVING percent_of_world_pop >3;
+
+--Find the average population of countries that make up more than 3% of the worlds population--
+SELECT name, AVG(population), percent_of_world_pop FROM countries
+GROUP BY name
+HAVING percent_of_world_pop >3;
+
+--Organize birthrates for each country--
+SELECT name, fertility_rate,
+CASE 
+WHEN fertility_rate <2 THEN "very low"
+WHEN fertility_rate <3 THEN "low"
+WHEN fertility_rate <4 THEN "mid"
+WHEN fertility_rate <5 THEN "high"
+WHEN fertility_rate >=5 THEN "very high"
+ELSE "out_of_range"
+END as "rate_of_babies_born" FROM countries 
+ORDER BY fertility_rate desc;
+
+--What countries have a population greater than 100000000 with a median age less than 40?--
+SELECT * FROM countries WHERE population >100000000 AND median_age <40;
+
+--What countries have a population less than 1000 or a migrant rate of less than 100?--
+SELECT * FROM countries WHERE population <1000 OR net_migrants <100;
